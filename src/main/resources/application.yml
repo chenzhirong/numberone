@@ -4,12 +4,11 @@ numberone:
   name: NumberOne
   # 版本
   version: 4.1.0
-  # 版权年份
   copyrightYear: 2019
   # 实例演示开关
   demoEnabled: true
-  # 文件路径 示例（ Windows配置D:/numberone/uploadPath，Linux配置 /home/numberone/uploadPath）
-  profile: D:/numberone/uploadPath
+  # 文件路径 示例（ Windows配置D:/fzyz/uploadPath，Linux配置 /home/fzyz/uploadPath）
+  profile: D:/fzyz/uploadPath
   # 获取ip地址开关
   addressEnabled: true
 
@@ -90,11 +89,11 @@ pagehelper:
 shiro:
   user:
     # 登录地址
-    loginUrl: /login
+    loginUrl: /
     # 权限认证失败地址
     unauthorizedUrl: /unauth
     # 首页地址
-    indexUrl: /index
+    indexUrl: /
     # 验证码开关
     captchaEnabled: true
     # 验证码类型 math 数组计算 char 字符
@@ -132,7 +131,7 @@ xss:
 # 代码生成
 gen: 
   # 作者
-  author: numberone
+  author: fzyz
   # 默认生成包路径 system 需改成自己的模块名称 如 system monitor tool
   packageName: com.numberone.project.system
   # 自动去除表前缀，默认是true

@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html  lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link href="../static/css/fzyz/global.css" th:href="@{/css/fzyz/global.css}" rel="stylesheet" />
+    <link href="../static/css/fzyz/header.css" th:href="@{/css/fzyz/header.css}" rel="stylesheet" />
+    <title></title>
+    <script src="../static/js/fzyz/settab.js" th:src="@{/js/fzyz/settab.js}"></script>
+</head>
+
+<body>
+<div th:fragment="headname">
+<!--top begin-->
+<div class="top">
+    <div class="wrap">
+        <span class="fl">欢迎您来到<a href="#" title="" target="_blank">瑞商网</a></span>
+        <span class="fr"><a href="#" title="" target="_blank">请登录</a>&nbsp;&nbsp;<a href="#" title="" target="_blank">立即注册</a></span>
+    </div>
+</div>
+<!--top end-->
+<!--header begin-->
+<div class="header">
+    <div class="wrap">
+        <a href="#" title="" target="_blank"><img src="../../img/fzyz/ad1.jpg" width="1004" height="40" /></a>
+        <div class="search_box">
+            <a href="#" title="" target="_blank"><img src="../../img/fzyz/logo.jpg" width="389" height="53"  alt="" class="fl"/></a>
+            <div class="search">
+                <div id="lenu1">
+                    <ul>
+                        <li class="hover" onmousemove="setTab(1,0)">文章搜索<span></span></li>
+
+                    </ul>
+                </div>
+                <div class="lain1_box" id="lain1">
+                    <ul class="block">
+                        <li><input type="text"  value="请输入文章名称" onFocus="if(this.value=='请输入文章名称'){this.value='';}" onBlur="if(this.value==''){this.value='请输入产品名称';}" class="sertxt" /><input type="button" value="搜 索" name=""  class="serbtn"/></li>
+                    </ul>
+                    <ul>
+                        <li><input type="text"  value="请输入文章名称" onFocus="if(this.value=='请输入文章名称'){this.value='';}" onBlur="if(this.value==''){this.value='请输入企业名称';}" class="sertxt" /><input type="button" value="搜 索" name=""  class="serbtn"/></li>
+                    </ul>
+                    <ul>
+                        <li><input type="text"  value="请输入文章名称" onFocus="if(this.value=='请输入文章名称'){this.value='';}" onBlur="if(this.value==''){this.value='请输入品牌名称';}" class="sertxt" /><input type="button" value="搜 索" name=""  class="serbtn"/></li>
+                    </ul>
+                    <ul>
+                        <li><input type="text"  value="请输入文章名称" onFocus="if(this.value=='请输入文章名称'){this.value='';}" onBlur="if(this.value==''){this.value='请输入资讯名称';}"  class="sertxt" /><input type="button" value="搜 索" name=""  class="serbtn"/></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cb"></div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="wrap">
+            <ul class="nav_left">
+                <li><a href="#" title="" target="_blank">首 页</a></li>
+                <li><a href="#" title="" target="_blank">校园简讯</a></li>
+                <li><a href="#" title="" target="_blank">2020报名</a></li>
+                <li><a href="#" title="" target="_blank">学校概况</a></li>
+                <li><a href="#" title="" target="_blank">老师专栏</a></li>
+                <li><a href="#" title="" target="_blank">组织机构</a></li>
+                <li><a href="#" title="" target="_blank">校庆公告通知</a></li>
+            </ul>
+            <!--
+               <ul class="nav_right">
+                <li><a href="#" title="" target="_blank">社团活动</a><span>|</span></li>
+                <li><a href="#" title="" target="_blank">校园活动</a><span>|</span></li>
+                <li><a href="#" title="" target="_blank">电化教育</a></li>
+               </ul>
+            -->
+        </div>
+    </div>
+</div>
+<!--header end-->
+</div>
+</body>
+</html>

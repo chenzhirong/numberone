@@ -37,7 +37,20 @@ public class IndexController extends BaseController
         mmap.put("user", user);
         mmap.put("copyrightYear", numberOneConfig.getCopyrightYear());
         mmap.put("demoEnabled", numberOneConfig.isDemoEnabled());
-        return "index";
+        return "/index";
+    }
+
+    // 系统首页
+    @GetMapping("/")
+    public String mainPage(ModelMap mmap)
+    {
+        // 取身份信息
+        User user = getSysUser();
+        // 根据用户id取出菜单
+        mmap.put("user", user);
+        mmap.put("copyrightYear", numberOneConfig.getCopyrightYear());
+        mmap.put("demoEnabled", numberOneConfig.isDemoEnabled());
+        return "/fzyz/index";
     }
 
     // 切换主题
